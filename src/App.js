@@ -1,4 +1,6 @@
-import Expenses from "./components/Expenses/Expenses"
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense"
+
 const expensesArray = [
   {
     id: 'e1',
@@ -24,7 +26,8 @@ const expensesArray = [
 function App() {
   return (
     <div>
-      <Expenses items = {expensesArray}/>
+      <NewExpense />
+      <Expenses items={expensesArray} />
     </div>
   );
 }
